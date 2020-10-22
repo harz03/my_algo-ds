@@ -44,51 +44,20 @@ vector<int> primeFactors(ll n) {
 	}
 	return ans;
 }
-int square(int a,int b){
-	if(b==0)
-		return 1;
-	
-	return a*square(a,(b-1));
-}
 
 
 int32_t main()
 {
-#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-#endif
+// #ifndef ONLINE_JUDGE
+// 	freopen("input.txt", "r", stdin);
+// 	freopen("output.txt", "w", stdout);
+// #endif
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	int t;
 	cin>>t;
 	while(t--){
-			bool ok=false;
-			int n;
-			 cin>>n;
-			 vector<int>a(n);
-			 cin>>a[0];
-			 int first=a[0];
-			 for(int i=1;i<n;i++){
-			 	cin>>a[i];
-			 	if(a[i]!=first){
-			 		ok=true;
-			 	}
-			 }
-			 pair<int,int> p={0,0};
-			 if(ok){
-			 	for(int i=0;i<n;i++){
-			 		if(p.first<a[i]){
-			 			p.first=a[i];
-			 			p.second=i+1;
-			 		}
-
-			 	}
-			 	cout<<p.second<<endl;
-			 }
-			 else{
-			 	cout<<-1<<endl;
-			 }
+			
 		}
 	return 0;
 }

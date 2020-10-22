@@ -3,6 +3,8 @@
 
 using namespace std;
 #define ll long long
+#define pii pair<int,int>
+#define mii map<int,int>
 
 //notes
 // (a+b)mod c=(amod c+b mod c)%c;
